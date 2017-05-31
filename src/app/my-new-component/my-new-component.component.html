@@ -1,0 +1,9 @@
+ This is my transcluded content! Begin of ng-content
+<ng-content select=".app-my-new-component-title"></ng-content>
+<ng-content select=".app-my-new-component-content"></ng-content>
+<p style="background-color: deeppink">
+    {{ someProperty }}
+</p>
+<p [innerText]="someProperty" style="background-color: deeppink"></p>
+
+<p class="animate" [@myAwesomeAnimation]="state" (click)="animateMe()">I will animate</p>
